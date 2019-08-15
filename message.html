@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Message for Borno!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This website describes different life aspects of Michael Joseph Gomes (Borno) through 
+plenty of pictures and videos of him. Going through this website one will learn about how Borno is growing up, 
+what new things he is learning, what new places he is visiting etc.">
+<link rel="icon" href="borno.jpg">
+<link rel="stylesheet" href="Borno.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<style>
+main {padding-top:1em;}
+span{color:#000000;}
+</style>
+<script>
+function validateForm(){
+if (document.forms[0].userName.value==""){
+	alert("Name field cannot be empty");
+	return false;
+}
+if (document.forms[0].userEmail.value==""){
+	alert("Email field cannot be empty");
+	return false;
+}
+alert ("Thanks " + document.forms[0].userName.value + " for your message! Borno will be happy to get this!");
+return true;
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+<h1>Michael Joseph Gomes (Borno)</h1>
+</header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="month.html">Month by Month</a></li>
+<li><a href="milestones.html">Milestones Achieved</a></li>
+<li><a href="birthday.html">Birthday Celebration</a></li>
+<li><a href="">Travel Diary</a>
+<ul>
+	<li><a href="instate.html">In-State Outings</a></li>
+	<li><a href="outstate.html">Out-of-State Tours</a></li>
+	</ul>
+</li>
+<li><a href="videos.html">Video Gallery</a></li>
+<li><a href="message.html"><span>Message for Borno!</span></a></li>
+</ul>
+</nav>
+<main>
+<h3>Send Your Message to Borno!</h3>
+<p>Want to send your wish to Borno? Fill out the message box below to send your 
+thoughts and blessings. Please give your name and contact information first.<br><br>
+Required fields are marked with an asterisk (*).
+</p>
+<form method="post" onsubmit="return validateForm();">
+<label for="userName">* Name:</label><input type="text" name="userName" id="userName" required="required">
+<label for="userEmail">* E-mail:</label><input type="email" name="userEmail" id="userEmail" required="required">
+<label for="userMessage">* Message:</label>
+<textarea name="userMessage" rows="10" cols="30" id="userMessage" required="required"></textarea>
+<input id="mySend" type="submit" value="Send" >
+</form>
+</main>
+<footer>
+Copyright &copy; Joan Gomes, 2018<br>
+Contact: <a href="mailto:joan.eee.bd@gmail.com">joan.eee.bd@gmail.com</a>
+</footer>
+</div>
+</body>
+</html>
